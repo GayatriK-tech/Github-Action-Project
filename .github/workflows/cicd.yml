@@ -131,6 +131,7 @@ jobs:
         cluster_name: ${{ secrets.GKE_CLUSTER }}
         location: ${{ secrets.GKE_ZONE }}
 
+  
     - name: Deploy to GKE
       run: |
         kubectl apply -f ds.yml
